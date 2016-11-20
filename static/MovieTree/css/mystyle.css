@@ -46,3 +46,34 @@
     background-color: rgba(115, 0, 1, 0.67);
     padding: 15px;
 }
+
+.answerbox {
+    margin: auto;
+    width: 100%;
+    background-color: rgba(115, 0, 1, 0);
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+.textanswer-area {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(115, 0, 1, 0);
+    border: none;
+    border-radius: 5px;
+
+    animation-name: fadein;
+    animation-delay: 0.6s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        background-color: rgba(115, 0, 1, 0);
+    }
+    to {
+        background-color: rgba(115, 0, 1, 0.67);
+    }
+}

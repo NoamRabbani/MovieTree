@@ -23,8 +23,6 @@
     <!-- override the bootstrap style -->
     <link href={% static "MovieTree/css/mystyle.css" %} rel="stylesheet">
 
-    <!-- Angular JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src={% static "MovieTree/js/survey.js" %}></script>
 </head>
 <body>
@@ -75,10 +73,9 @@
                                    class="btn btn-start rating-button animated fadeInRightBig">
                             </input>
                         </div>
-                        <div>
-                            <textarea rows="5" placeholder="Got some idea?" value="" maxlength="150"
+                        <div class="textanswer-area">
+                            <textarea id="ans-textarea" rows="5" placeholder="Got some idea?" value="" maxlength="150"
                                       class="answerbox animated fadeInUpBig"></textarea>
-
                         </div>
 
                     </form>
