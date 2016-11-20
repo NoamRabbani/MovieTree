@@ -123,3 +123,9 @@ def view_database(request):
                 'question_list': question_list
                }
     return render(request, 'MovieTree/view_database.html', context)
+
+def recorder(request):
+    return render(request, 'MovieTree/recorder.html')
+
+def recorderWorker(request):
+    return render(request, 'MovieTree/recorderWorker.js')

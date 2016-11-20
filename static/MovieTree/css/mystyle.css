@@ -84,3 +84,30 @@
         background-color: rgba(115, 0, 1, 0.67);
     }
 }
+
+#survey-page {
+    opacity: 0;
+
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#recommendation-page {
+    opacity: 0;
+
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flash {
+    from {
+        background-color: rgba(0, 0, 0, 1);
+        opacity: 0;
+    }
+    to {
+        background-color: rgba(115, 0, 1, 0);
+        opacity: 1;
+    }
+}
