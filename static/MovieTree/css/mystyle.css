@@ -48,8 +48,9 @@
 
     animation-name: fadein;
     animation-delay: 0.7s;
-    animation-duration: 0.3s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
 .answerbox {
@@ -70,8 +71,9 @@
 
     animation-name: fadein;
     animation-delay: 0.7s;
-    animation-duration: 0.3s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
 @keyframes fadein {

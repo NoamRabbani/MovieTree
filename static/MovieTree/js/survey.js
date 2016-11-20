@@ -12,11 +12,14 @@ setTimeout(function () {
 function pressed(e) {
 
     var ans = document.getElementById("ans-textarea");
-    if (e.keyCode == 13 && ans.value.trim().length > 0) {
-        e.preventDefault(); // avoid line break
-
-        // TODO: submit to backend for language processing
-        alert("language for processing: " + ans.value.trim());
-
+    if (e.keyCode == 13) {
+        e.preventDefault();
+        if (ans.value.trim().length > 0) {
+            // TODO: submit to backend for language processing
+            alert("language for processing: " + ans.value.trim());
+        } else {
+            ans.value = "";
+            ans.setAttribute("placeholder", "Come on, just tell us something...");
+        }
     }
 }
