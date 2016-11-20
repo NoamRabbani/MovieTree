@@ -7,12 +7,16 @@
 setTimeout(function () {
     var ans = document.getElementById("ans-textarea");
     ans.focus();
-    ans.bind('keypress', function (e) {
-        if ((e.keyCode || e.which) == 13) {
-
-            alert("enter");
-
-            return false;
-        }
-    });
 }, 800);
+
+function pressed(e) {
+
+    var ans = document.getElementById("ans-textarea");
+    if (e.keyCode == 13 && ans.value.trim().length > 0) {
+        e.preventDefault(); // avoid line break
+
+        // TODO: submit to backend for language processing
+        alert("language for processing: " + ans.value.trim());
+
+    }
+}

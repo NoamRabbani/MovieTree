@@ -73,11 +73,15 @@
                                    class="btn btn-start rating-button animated fadeInRightBig">
                             </input>
                         </div>
+
+                    </form>
+                    {# TODO: can you handle the submited text data in backend for language proceesing via my python program #}
+                    {# TODO: after processing the text, you'll get a number ranging from 0 to 100, can you rescale it within 1 - 5 and submit it as the answer of current question and then jump to next question #}
+                    <form action="process_text" method="post">
                         <div class="textanswer-area">
                             <textarea id="ans-textarea" rows="5" placeholder="Got some idea?" value="" maxlength="150"
-                                      class="answerbox animated fadeInUpBig"></textarea>
+                                      onkeydown="pressed(event)" class="answerbox animated fadeInUpBig"></textarea>
                         </div>
-
                     </form>
                 </div>
             </div>
