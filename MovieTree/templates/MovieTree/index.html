@@ -24,7 +24,8 @@
     <link href={% static "MovieTree/css/mystyle.css" %} rel="stylesheet">
 
 </head>
-<body>
+{# press enter to start #}
+<body onkeydown="startSurvey(event)">
 <script type="text/javascript" src={% static "MovieTree/js/jquery.js" %}></script>
 <script type="text/javascript" src={% static "MovieTree/js/bootstrap.min.js" %}></script>
 <script type="text/javascript" src={% static "MovieTree/js/jquery.inview.min.js" %}></script>
@@ -34,6 +35,7 @@
 <script type="text/javascript" src={% static "MovieTree/js/jquery.countTo.js" %}></script>
 <script type="text/javascript" src={% static "MovieTree/js/main.js" %}></script>
 <script type="text/javascript" src={% static "MovieTree/js/fileSaver.js" %}></script>
+<script type="text/javascript" src={% static "MovieTree/js/indexpage.js" %}></script>
 
 <header id="home">
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
